@@ -1,0 +1,37 @@
+RELATORIO DE EXECUCAO SMOKE - RODADA 01
+
+Data da execucao: 2026-04-14
+Ambiente: Practice Software Testing - ambiente publico
+Navegador: Chrome via Playwright CLI
+Executor: Wesley
+
+RESULTADO CONSOLIDADO
+
+- Casos planejados: 10
+- Casos executados: 10
+- Aprovados: 7
+- Reprovados: 1
+- Bloqueados: 2
+- Nao executados: 0
+
+RESULTADO POR ITEM
+
+- SMK-01 Pass: Home carregou corretamente
+- SMK-02 Pass: Catalogo exibiu produtos navegaveis
+- SMK-03 Pass: Busca por hammer retornou itens coerentes
+- SMK-04 Pass: Filtro eco-friendly reduziu resultados
+- SMK-05 Pass: Detalhe do produto exibiu nome, preco e CTA
+- SMK-06 Pass: Item foi adicionado ao carrinho
+- SMK-07 Fail: Total da linha mudou, mas total geral nao
+- SMK-08 Blocked: Login nao foi validado por bloqueio no cadastro
+- SMK-09 Blocked: Logout depende de login bem-sucedido
+- SMK-10 Pass: Checkout avancou para etapa de sign in mantendo item
+
+BUGS ENCONTRADOS
+
+- BUG-001: Total geral do carrinho nao acompanha mudanca de quantidade
+- BUG-002: Formulario de cadastro exige pais mesmo com Brazil selecionado
+
+RECOMENDACAO PRELIMINAR
+
+- No Go

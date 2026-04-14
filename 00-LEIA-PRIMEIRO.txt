@@ -1,0 +1,38 @@
+TOOLSHOP MANUAL QUALITY - LEITURA INICIAL
+
+Este arquivo apresenta uma visao rapida do projeto.
+
+VISAO GERAL
+
+- A documentacao principal da etapa esta concluida.
+- O smoke inicial foi executado no ambiente publico.
+- O login e o logout foram validados em reteste.
+- Dois defeitos importantes permanecem abertos.
+- A conclusao atual da rodada e No Go.
+
+ORDEM DE LEITURA SUGERIDA
+
+1. RESUMO-DO-PROJETO.txt
+   Apresenta a visao geral da etapa em leitura curta.
+
+2. README.md
+   Mostra objetivo, escopo, estrutura e status atual.
+
+3. execution-reports\2026-04-14-rodada-smoke-01.md
+   Resume a rodada principal.
+
+4. bug-reports\BUG-001-cart-total-not-updated.md
+   Falha encontrada no carrinho.
+
+5. bug-reports\BUG-002-registration-country-validation.md
+   Falha encontrada no cadastro.
+
+6. release\2026-04-14-recomendacao-de-release.md
+   Traz a conclusao final da rodada.
+
+COMO VALIDAR O PROJETO
+
+- O sistema testado e publico.
+- Os fluxos executados estao descritos nos relatorios.
+- Os bug reports trazem passos de reproducao e impacto.
+- As evidencias da rodada estao organizadas na pasta evidence.

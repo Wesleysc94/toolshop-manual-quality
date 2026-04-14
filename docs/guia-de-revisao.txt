@@ -1,0 +1,47 @@
+GUIA DE REVISAO
+
+OBJETIVO
+
+Este repositorio apresenta uma rodada de QA manual feita sobre a aplicacao publica Practice Software Testing.
+
+O objetivo deste material e mostrar:
+
+- o que foi validado
+- o que foi encontrado
+- quais evidencias foram registradas
+- qual foi a conclusao da rodada
+
+ORDEM DE LEITURA
+
+1. RESUMO-DO-PROJETO.txt
+2. README.md
+3. execution-reports\2026-04-14-rodada-smoke-01.md
+4. execution-reports\2026-04-14-reteste-autenticacao.md
+5. bug-reports\
+6. evidence\
+7. release\2026-04-14-recomendacao-de-release.md
+
+COMO VALIDAR
+
+- Abrir o site publico: https://practicesoftwaretesting.com/
+- Repetir os fluxos descritos nos relatorios
+- Conferir os bug reports e as evidencias
+
+LOGIN DEMO USADO
+
+- customer@practicesoftwaretesting.com
+- welcome01
+
+Fonte oficial:
+- https://github.com/testsmith-io/practice-software-testing
+
+STATUS ATUAL
+
+- Login e logout validados
+- Carrinho com bug de total ainda aberto
+- Cadastro com bug de validacao de pais ainda aberto
+- Recomendacao atual: No Go
+
+POSICIONAMENTO
+
+Este repositorio nao e um framework de automacao. A proposta desta etapa e apresentar uma base de QA manual com execucao real, evidencias e conclusao clara.

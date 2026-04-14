@@ -1,0 +1,66 @@
+TOOLSHOP MANUAL QUALITY - RESUMO DO PROJETO
+
+O QUE E ESTE REPOSITORIO
+
+Este projeto reune documentos e resultados de uma rodada de QA manual realizada sobre a aplicacao publica Practice Software Testing.
+
+OBJETIVO
+
+Registrar de forma clara:
+
+- o que foi priorizado
+- o que foi testado
+- o que funcionou
+- o que falhou
+- quais evidencias foram coletadas
+- qual foi a conclusao final da rodada
+
+ESCOPO DESTA ETAPA
+
+- navegacao principal
+- catalogo
+- busca e filtros
+- carrinho
+- checkout
+- login e logout
+- perfil e contato
+
+O QUE FOI EXECUTADO
+
+Em 2026-04-14, foram realizadas duas rodadas:
+
+- uma rodada inicial de smoke nos fluxos principais
+- um reteste de autenticacao para validar login e logout
+
+PRINCIPAIS RESULTADOS
+
+- home, catalogo, busca, filtro e entrada no checkout funcionaram
+- login e logout foram validados com conta demo oficial
+- dois defeitos relevantes foram encontrados
+
+FALHAS REGISTRADAS
+
+- inconsistencia no total do carrinho apos mudanca de quantidade
+- bloqueio no cadastro por validacao incorreta do campo pais
+
+CONCLUSAO
+
+A recomendacao final desta etapa e No Go, porque os defeitos encontrados afetam fluxos importantes de compra e cadastro.
+
+COMO VALIDAR O PROJETO
+
+- acessar https://practicesoftwaretesting.com/
+- ler os relatorios em execution-reports/
+- conferir os registros em bug-reports/
+- revisar as evidencias em evidence/
+- ler a recomendacao final em release/
+
+ARQUIVOS PRINCIPAIS
+
+- README.md
+- docs/guia-de-revisao.md
+- execution-reports/2026-04-14-rodada-smoke-01.md
+- execution-reports/2026-04-14-reteste-autenticacao.md
+- bug-reports/BUG-001-cart-total-not-updated.md
+- bug-reports/BUG-002-registration-country-validation.md
+- release/2026-04-14-recomendacao-de-release.md

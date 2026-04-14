@@ -1,0 +1,20 @@
+RETESTE DE AUTENTICACAO - 2026-04-14
+
+OBJETIVO
+
+Fechar os itens bloqueados de autenticacao do smoke inicial.
+
+RESULTADO
+
+- SMK-08 Pass: login realizado com sucesso usando conta demo oficial
+- SMK-09 Pass: logout realizado com retorno para a tela de login
+
+EVIDENCIAS
+
+- page-2026-04-14T17-35-18-085Z.png
+- page-2026-04-14T17-36-53-329Z.png
+- console-2026-04-14T17-34-20-854Z.log
+
+CONCLUSAO
+
+Autenticacao basica validada. Os bloqueios principais de release seguem em checkout e cadastro.

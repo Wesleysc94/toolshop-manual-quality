@@ -1,0 +1,20 @@
+RECOMENDACAO DE RELEASE - 2026-04-14
+
+STATUS RECOMENDADO
+
+- No Go
+
+RESUMO
+
+O produto navega, permite descoberta de produto e teve login/logout validados, mas nao deve ser considerado pronto para uma release focada em compra completa neste estado.
+
+MOTIVOS
+
+- O carrinho apresentou inconsistencia no total apos alteracao de quantidade.
+- O cadastro de novo usuario ficou bloqueado por validacao incorreta de pais.
+
+CONDICOES PARA SEGUIR
+
+- Corrigir BUG-001 e validar recalculo correto do total
+- Corrigir BUG-002 e validar cadastro bem-sucedido
+- Reexecutar smoke dos itens bloqueados e do fluxo de checkout
