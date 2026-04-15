@@ -1,76 +1,124 @@
-# toolshop-manual-quality
+# 📋 toolshop-manual-quality
 
-Projeto de QA manual construido sobre a aplicacao publica **Practice Software Testing**.
+> Projeto de QA manual com planejamento, execução smoke, bug reports e recomendação de release.
 
-Este repositorio registra a etapa manual do portfolio: definicao de escopo, organizacao da rodada, execucao do smoke, abertura de bugs e recomendacao final.
+[![Bugs encontrados](https://img.shields.io/badge/Bugs-2%20defeitos-red)](bug-reports/)
+[![Recomendação](https://img.shields.io/badge/Release-No%20Go-red)]()
+[![Produto](https://img.shields.io/badge/Produto-Practice%20Software%20Testing-blue)](https://practicesoftwaretesting.com/)
 
-## Visao Geral
+📦 **Parte do portfolio:** [toolshop-quality-portfolio](https://github.com/Wesleysc94/toolshop-quality-portfolio)
 
-Aqui, a proposta foi documentar de forma simples e confiavel:
+---
 
-- o que entrou na primeira rodada
-- como a execucao foi conduzida
-- quais falhas foram encontradas
-- qual foi a conclusao da etapa
+## Objetivo
 
-## Produto Sob Teste
+Demonstrar a capacidade de conduzir uma rodada completa de QA manual — do planejamento à recomendação final — sobre um produto real, documentando cada etapa de forma reproduzível.
 
-- Aplicacao web: https://practicesoftwaretesting.com/
-- Referencia de API: https://practiceautomatedtesting.com/api
-- Swagger: https://practiceautomatedtesting.com/swagger
+Este projeto responde à pergunta que um tech lead faria: **"Se eu te der um produto novo hoje, como você começa a testar?"**
 
-## Escopo Da Etapa
+---
 
-Os fluxos priorizados nesta primeira fase foram:
+## Produto sob teste
 
-- autenticacao
-- catalogo
-- busca e filtros
-- carrinho
-- checkout
-- contato e perfil
+| Recurso | URL |
+|---|---|
+| Aplicação web | https://practicesoftwaretesting.com/ |
+| Referência de API | https://practiceautomatedtesting.com/api |
+| Swagger | https://practiceautomatedtesting.com/swagger |
 
-Ficaram fora desta etapa:
+---
 
-- automacao web
-- automacao de API
-- testes mobile
-- performance
-- area administrativa
+## O que foi feito
 
-## Resultado Da Rodada
+### 1. Planejamento
 
-Em `2026-04-14`, o projeto registrou:
+- Mapeamento do escopo funcional (o que entra e o que fica de fora)
+- Análise de risco para priorizar os fluxos mais críticos
+- Criação do plano de testes com critérios de entrada e saída
 
-- uma rodada inicial de smoke
-- um reteste de autenticacao com conta demo oficial
-- `2` defeitos relevantes documentados
-- confirmacao de login e logout no reteste
-- recomendacao final `No Go`
+### 2. Escopo priorizado
 
-## Estrutura Do Repositorio
+Fluxos que entraram na primeira rodada:
 
-- [RESUMO-DO-PROJETO.txt](./RESUMO-DO-PROJETO.txt): leitura curta da etapa
-- [docs/](./docs/): escopo, plano de testes, analise de risco e guia de revisao
-- [checklists/](./checklists/): checklist smoke da rodada
-- [test-cases/](./test-cases/): casos de teste por area funcional
-- [bug-reports/](./bug-reports/): falhas encontradas com impacto e reproducao
-- [execution-reports/](./execution-reports/): relatorios das execucoes realizadas
-- [release/](./release/): recomendacao final da rodada
-- [evidence/](./evidence/): screenshots e registros de apoio
+- ✅ Autenticação (login e logout)
+- ✅ Catálogo de produtos
+- ✅ Busca e filtros
+- ✅ Carrinho de compras
+- ✅ Checkout
+- ✅ Contato e perfil
 
-## Como Revisar
+Fluxos que ficaram de fora (decisão documentada):
 
-1. Comece por [RESUMO-DO-PROJETO.txt](./RESUMO-DO-PROJETO.txt).
-2. Leia [docs/guia-de-revisao.md](./docs/guia-de-revisao.md).
-3. Consulte os relatorios em [execution-reports/](./execution-reports/).
-4. Veja os registros em [bug-reports/](./bug-reports/).
-5. Feche a leitura com [release/2026-04-14-recomendacao-de-release.md](./release/2026-04-14-recomendacao-de-release.md).
+- ⏳ Automação web e API (cobertos em repositórios separados)
+- ⏳ Testes mobile
+- ⏳ Performance
+- ⏳ Área administrativa
 
-## Como Validar
+### 3. Execução
 
-Como esta etapa e manual, a validacao e feita por leitura e reproducao:
+- Rodada smoke executada em 2026-04-14
+- Reteste de autenticação com conta demo oficial
+- Todas as execuções registradas com evidências
 
-1. Acesse o produto publico.
-2. Siga os relatorios e os casos de teste.
-3. Compare os resultados com os bugs e as evidencias registradas.
+### 4. Resultado
+
+| Métrica | Valor |
+|---|---|
+| Defeitos encontrados | **2** |
+| Retestes realizados | 1 (autenticação) |
+| Login/Logout no reteste | ✅ Confirmado |
+| Recomendação final | **❌ No Go** |
+
+> A recomendação **No Go** foi emitida porque os defeitos encontrados impactam fluxos críticos do produto. Isso demonstra independência de julgamento — o papel do QA é informar riscos, não aprovar entregas por pressão.
+
+---
+
+## Estrutura do repositório
+
+```
+toolshop-manual-quality/
+├── README.md                    ← Você está aqui
+├── RESUMO-DO-PROJETO.txt        ← Leitura rápida (2 min)
+├── 00-LEIA-PRIMEIRO.txt         ← Orientação inicial
+├── docs/
+│   ├── escopo.md                ← O que entra e o que fica de fora
+│   ├── plano-de-testes.md       ← Critérios, abordagem, riscos
+│   ├── analise-de-risco.md      ← Priorização por impacto
+│   └── guia-de-revisao.md       ← Trilha de leitura pra avaliadores
+├── checklists/                  ← Checklist smoke da rodada
+├── test-cases/                  ← Casos de teste por área funcional
+├── bug-reports/                 ← Defeitos com reprodução e evidência
+├── execution-reports/           ← Relatórios das execuções
+├── release/                     ← Recomendação final (No Go)
+└── evidence/                    ← Screenshots e registros de apoio
+```
+
+---
+
+## Como revisar
+
+Se você está avaliando este trabalho, siga esta ordem:
+
+1. **[RESUMO-DO-PROJETO.txt](RESUMO-DO-PROJETO.txt)** — Visão geral em 2 minutos
+2. **[docs/guia-de-revisao.md](docs/guia-de-revisao.md)** — Trilha completa de leitura
+3. **[execution-reports/](execution-reports/)** — O que aconteceu na rodada
+4. **[bug-reports/](bug-reports/)** — Os defeitos encontrados
+5. **[release/2026-04-14-recomendacao-de-release.md](release/2026-04-14-recomendacao-de-release.md)** — Parecer final
+
+## Como validar
+
+Este projeto é manual, então a validação é por reprodução:
+
+1. Acesse [practicesoftwaretesting.com](https://practicesoftwaretesting.com/)
+2. Siga os casos de teste em `test-cases/`
+3. Compare com os bugs registrados em `bug-reports/`
+4. Confira as evidências em `evidence/`
+
+---
+
+## O que este projeto demonstra
+
+- **Planejamento antes de execução** — escopo e risco definidos antes de abrir o navegador
+- **Bug reports profissionais** — passos de reprodução, severidade, impacto e evidência
+- **Parecer técnico independente** — recomendação No Go baseada em dados, não em opinião
+- **Documentação reproduzível** — qualquer pessoa pode seguir os mesmos passos e validar os resultados
