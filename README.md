@@ -6,15 +6,16 @@
 [![Recomendação](https://img.shields.io/badge/Release-No%20Go-red)]()
 [![Produto](https://img.shields.io/badge/Produto-Practice%20Software%20Testing-blue)](https://practicesoftwaretesting.com/)
 
-📦 **Parte do portfolio:** [toolshop-quality-portfolio](https://github.com/Wesleysc94/toolshop-quality-portfolio)
+🔎 **Portfolio principal:** [Wesleysc94](https://github.com/Wesleysc94/Wesleysc94)
+📦 **Case Study 1:** [toolshop-quality-portfolio](https://github.com/Wesleysc94/toolshop-quality-portfolio)
 
 ---
 
 ## Objetivo
 
-Demonstrar a capacidade de conduzir uma rodada completa de QA manual — do planejamento à recomendação final — sobre um produto real, documentando cada etapa de forma reproduzível.
+Esta etapa cobre uma rodada completa de QA manual sobre um produto real, da preparação inicial até a recomendação final de release.
 
-Este projeto responde à pergunta que um tech lead faria: **"Se eu te der um produto novo hoje, como você começa a testar?"**
+Este projeto responde a uma pergunta simples de contexto profissional: se eu receber um produto novo hoje, como organizo o começo da validação, documento os achados e comunico risco com clareza?
 
 ---
 
@@ -28,82 +29,70 @@ Este projeto responde à pergunta que um tech lead faria: **"Se eu te der um pro
 
 ---
 
-## O que foi feito
+## Escopo da rodada
 
-### 1. Planejamento
+Fluxos priorizados na primeira rodada:
 
-- Mapeamento do escopo funcional (o que entra e o que fica de fora)
-- Análise de risco para priorizar os fluxos mais críticos
-- Criação do plano de testes com critérios de entrada e saída
+- autenticação
+- catálogo de produtos
+- busca e filtros
+- carrinho
+- checkout
+- contato e perfil
 
-### 2. Escopo priorizado
+Fora do escopo desta etapa:
 
-Fluxos que entraram na primeira rodada:
+- automação web e API
+- testes mobile
+- performance
+- área administrativa
 
-- ✅ Autenticação (login e logout)
-- ✅ Catálogo de produtos
-- ✅ Busca e filtros
-- ✅ Carrinho de compras
-- ✅ Checkout
-- ✅ Contato e perfil
+---
 
-Fluxos que ficaram de fora (decisão documentada):
+## O que foi validado
 
-- ⏳ Automação web e API (cobertos em repositórios separados)
-- ⏳ Testes mobile
-- ⏳ Performance
-- ⏳ Área administrativa
+### Planejamento
 
-### 3. Execução
+- definição de escopo funcional
+- análise de risco
+- plano de testes com critérios de entrada e saída
 
-- Rodada smoke executada em 2026-04-14
-- Reteste de autenticação com conta demo oficial
-- Todas as execuções registradas com evidências
+### Execução
 
-### 4. Resultado
+- rodada smoke registrada em 2026-04-14
+- reteste de autenticação com conta demo oficial
+- evidências consolidadas em relatórios e screenshots
+
+### Resultado
 
 | Métrica | Valor |
 |---|---|
 | Defeitos encontrados | **2** |
-| Retestes realizados | 1 (autenticação) |
+| Retestes realizados | 1 |
 | Login/Logout no reteste | ✅ Confirmado |
 | Recomendação final | **❌ No Go** |
 
-> A recomendação **No Go** foi emitida porque os defeitos encontrados impactam fluxos críticos do produto. Isso demonstra independência de julgamento — o papel do QA é informar riscos, não aprovar entregas por pressão.
-
 ---
 
-## Estrutura do repositório
+## Stack e artefatos
 
-```
-toolshop-manual-quality/
-├── README.md                    ← Você está aqui
-├── RESUMO-DO-PROJETO.txt        ← Leitura rápida (2 min)
-├── 00-LEIA-PRIMEIRO.txt         ← Orientação inicial
-├── docs/
-│   ├── escopo.md                ← O que entra e o que fica de fora
-│   ├── plano-de-testes.md       ← Critérios, abordagem, riscos
-│   ├── analise-de-risco.md      ← Priorização por impacto
-│   └── guia-de-revisao.md       ← Trilha de leitura pra avaliadores
-├── checklists/                  ← Checklist smoke da rodada
-├── test-cases/                  ← Casos de teste por área funcional
-├── bug-reports/                 ← Defeitos com reprodução e evidência
-├── execution-reports/           ← Relatórios das execuções
-├── release/                     ← Recomendação final (No Go)
-└── evidence/                    ← Screenshots e registros de apoio
-```
+| Camada | Uso |
+|---|---|
+| **QA Manual** | checklist smoke, casos de teste e bug reports |
+| **Documentação** | Markdown para escopo, plano, risco e relatórios |
+| **Evidências** | screenshots e registros da execução |
 
 ---
 
 ## Como revisar
 
-Se você está avaliando este trabalho, siga esta ordem:
+1. Leia o [RESUMO-DO-PROJETO.txt](RESUMO-DO-PROJETO.txt)
+2. Consulte o [docs/guia-de-revisao.md](docs/guia-de-revisao.md)
+3. Abra os relatórios em [execution-reports/](execution-reports/)
+4. Leia os bugs em [bug-reports/](bug-reports/)
+5. Feche com a recomendação em [release/2026-04-14-recomendacao-de-release.md](release/2026-04-14-recomendacao-de-release.md)
 
-1. **[RESUMO-DO-PROJETO.txt](RESUMO-DO-PROJETO.txt)** — Visão geral em 2 minutos
-2. **[docs/guia-de-revisao.md](docs/guia-de-revisao.md)** — Trilha completa de leitura
-3. **[execution-reports/](execution-reports/)** — O que aconteceu na rodada
-4. **[bug-reports/](bug-reports/)** — Os defeitos encontrados
-5. **[release/2026-04-14-recomendacao-de-release.md](release/2026-04-14-recomendacao-de-release.md)** — Parecer final
+---
 
 ## Como validar
 
@@ -111,14 +100,14 @@ Este projeto é manual, então a validação é por reprodução:
 
 1. Acesse [practicesoftwaretesting.com](https://practicesoftwaretesting.com/)
 2. Siga os casos de teste em `test-cases/`
-3. Compare com os bugs registrados em `bug-reports/`
+3. Compare os resultados com os bugs documentados
 4. Confira as evidências em `evidence/`
 
 ---
 
-## O que este projeto demonstra
+## O que este projeto entrega
 
-- **Planejamento antes de execução** — escopo e risco definidos antes de abrir o navegador
-- **Bug reports profissionais** — passos de reprodução, severidade, impacto e evidência
-- **Parecer técnico independente** — recomendação No Go baseada em dados, não em opinião
-- **Documentação reproduzível** — qualquer pessoa pode seguir os mesmos passos e validar os resultados
+- **Planejamento antes de execução** — escopo e risco definidos antes da rodada
+- **Bug reports com rastreabilidade** — passos de reprodução, impacto e evidência
+- **Comunicação de risco** — recomendação de release baseada em resultado concreto
+- **Execução verificável** — outra pessoa consegue seguir o mesmo caminho de validação

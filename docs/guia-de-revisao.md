@@ -4,7 +4,7 @@
 
 Este repositorio apresenta uma rodada de QA manual realizada sobre a aplicacao publica **Practice Software Testing**.
 
-O foco aqui e mostrar, de forma clara:
+O foco aqui e registrar:
 
 - o que foi testado
 - o que foi encontrado
@@ -81,3 +81,9 @@ Cada bug report traz:
 ## Posicionamento do repositorio
 
 Este repositorio nao foi criado como framework de automacao. A proposta desta etapa e apresentar uma base de QA manual bem documentada, com execucao real, evidencias e conclusao clara.
+
+## Navegacao do portfolio
+
+- portfolio principal: https://github.com/Wesleysc94/Wesleysc94
+- hub do Case Study 1: https://github.com/Wesleysc94/toolshop-quality-portfolio
+- Case Study 2: https://github.com/Wesleysc94/swaglab-quality-suite
